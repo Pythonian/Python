@@ -7,5 +7,15 @@ def convert_to_minutes(num_hours):
 	result = num_hours * 60
 	return result
 
-minutes_2 = convert_to_minutes(2)
-minutes_3 = convert_to_minutes(3)
+def convert_to_seconds(num_hours):
+	"""(int) -> int
+	Return the number of seconds there are in num_hours hours.
+	>>> convert_to_minutes(2)
+	7200
+	"""
+	minutes = convert_to_minutes(num_hours)
+	seconds = minutes * 60
+	return seconds
+
+minutes = convert_to_minutes(2)
+seconds = convert_to_seconds(2)
